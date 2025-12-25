@@ -1,5 +1,6 @@
 🧱 Stack Implementation Using Java
 
+---
 
 🚀 Overview
 
@@ -94,12 +95,12 @@ while (true) {
 ```
 
 ▶️ How To Run
-```bash
+```http
 javac Main3.java
 ```
 
 Run
-```bash
+```http
 java Main3
 ```
 
