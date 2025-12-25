@@ -67,7 +67,7 @@ class Stack {
                 System.out.println("The End");
             }
         }
-            System.out.println("That's What Look Like inside The Stack");
+        System.out.println("That's What Look Like inside The Stack");
         Choice();
 
     }
@@ -90,7 +90,7 @@ class Stack {
 
     public void Choice() {
 
-        System.out.println("What Do You Want to Do? \n1. Add to The Array\n2. Remove one Element from Array\n3. Display The Data in Array");
+        System.out.println("What Do You Want to Do? \n1. Add to The Array\n2. Remove one Element from Array\n3. Display The Data in Array\n4. Exit The Program");
         int choice = scanner2.nextInt();
 
         switch (choice) {
@@ -116,11 +116,12 @@ class Stack {
                         break;
                 }
 
+            case 4:
+                System.out.println("Program Ended");
+                System.exit(0);
+
         }
 
     }
 
 }
-
-// التوب هنا هو مؤشر بيشاور علي العناصر فقط 
-// يعني لما اقول top -- ده معناه انا بقيت بشاور علي العنصر الي قبله لوقتي و كدا العنصر القديم بقي لوحده
