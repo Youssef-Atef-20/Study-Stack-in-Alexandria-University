@@ -4,32 +4,38 @@
 
 🚀 Overview
 
-This project is a console based Java application that demonstrates how a Stack works using an array.
-The program provides a simple interactive menu that allows the user to push pop and display stack elements.
+- This project is a console based Java application that demonstrates how a Stack works using an array.
+- The program provides a simple interactive menu that allows the user to push pop and display stack elements.
 
-The stack follows the Last In First Out ( LIFO ) principle.
+- The stack follows the Last In First Out ( LIFO ) principle.
+
+
 
 
 🛠️ How It Works
 
-The program starts by asking the user to enter the maximum size of the stack.
-After that a menu keeps running until the user chooses to exit.
+- The program starts by asking the user to enter the maximum size of the stack.
+- After that a menu keeps running until the user chooses to exit.
 
-All stack operations are implemented inside a dedicated Stack class while the main class is responsible for running the loop.
+- All stack operations are implemented inside a dedicated Stack class while the main class is responsible for running the loop.
+
+
 
 
 📦 Stack Structure
 
-The stack is implemented using an integer array and an index pointer called top.
+- The stack is implemented using an integer array and an index pointer called top.
 
-If top == -1 the stack is empty
-If top == max - 1 the stack is full
+- If top == -1 the stack is empty
+- If top == max - 1 the stack is full
+
+
 
 
 ➕ Push Operation
 
-Adds data to the stack until it becomes full.
-If the stack reaches its maximum size a stack overflow message is displayed.
+- Adds data to the stack until it becomes full.
+- If the stack reaches its maximum size a stack overflow message is displayed.
 ```bash
 public void push() {
     if (isFull()) {
@@ -44,10 +50,12 @@ public void push() {
 ```
 
 
+
+
 ➖ Pop Operation
 
-Removes the last inserted element from the stack.
-If the stack is empty a warning message is shown.
+- Removes the last inserted element from the stack.
+- If the stack is empty a warning message is shown.
 
 ```bash
 public void pop() {
@@ -59,6 +67,9 @@ public void pop() {
     System.out.println(stackArray[top--] + " Removed");
 }
 ```
+
+
+
 
 
 
@@ -84,6 +95,8 @@ for (int i = 0; i <= top; i++) {
 }
 ```
 
+
+
 🎛️ Menu System
 
 The menu allows the user to add remove display or exit the program.
@@ -94,6 +107,8 @@ while (true) {
 }
 ```
 
+
+---
 ▶️ How To Run
 ```http
 javac Main3.java
@@ -108,18 +123,18 @@ java Main3
 
 ⚡Features
 
-Menu driven interaction
-Array based stack implementation
-Handles stack overflow and empty stack cases
-Beginner friendly and easy to read
+- Menu driven interaction
+- Array based stack implementation
+- Handles stack overflow and empty stack cases
+- Beginner friendly and easy to read
 
 
 
 
 📚 What You Learn
 
-Understanding stack data structure
-Array based implementation
+- Understanding stack data structure
+- Array based implementation
 Using loops conditions and switch statements
 Building menu driven Java programs
 
