@@ -9,7 +9,9 @@ public class Main3 {
         int max = scanner.nextInt();
         Stack S = new Stack(max);
 
-        S.Choice();
+        while (true) {
+            S.Choice();
+        }
 
     }
 }
@@ -44,7 +46,6 @@ class Stack {
             System.out.println(data + " Pushed");
         }
         System.out.println("Stack Overflow! We Can't push ");
-        Choice();
 
     }
 
@@ -53,7 +54,7 @@ class Stack {
             System.out.println("Stack is Empty");
         }
         System.out.println(stackArray[top--] + " Removed");
-        Choice();
+
     }
 
     public void DisplayLikeStack() {
@@ -68,7 +69,6 @@ class Stack {
             }
         }
         System.out.println("That's What Look Like inside The Stack");
-        Choice();
 
     }
 
@@ -84,7 +84,6 @@ class Stack {
             }
         }
         System.out.println("That's What Look in the Normal Condition");
-        Choice();
 
     }
 
@@ -119,6 +118,9 @@ class Stack {
             case 4:
                 System.out.println("Program Ended");
                 System.exit(0);
+
+            default:
+                System.out.println("Invalid Choice");
 
         }
 
