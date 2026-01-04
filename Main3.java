@@ -107,7 +107,8 @@ class Stack {
             case 3:
 
                 System.out.print("Do You Want to Appear The Array Shape Like Stack or not? ( Y / N )");
-                String choice_Display = scanner2.next().toLowerCase();
+                String choice_Display = scanner2.next().toLowerCase(); 
+                
 
                 switch (choice_Display) {
                     case "y":
