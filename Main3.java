@@ -6,8 +6,8 @@ public class Main3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please Enter The Maximum Number of data That will be In the Array: ");
-        int max = scanner.nextInt();
-        Stack S = new Stack(max);
+        int size = scanner.nextInt();
+        Stack S = new Stack(size);
 
         while (true) {
             S.Choice();
@@ -19,12 +19,12 @@ public class Main3 {
 class Stack {
 
     Scanner scanner2 = new Scanner(System.in);
-    int max;
+    int size;
     int top;
     int[] stackArray;
 
     Stack(int size) {
-        this.max = size;
+        this.size = size;
         stackArray = new int[size];
         top = -1;
     }
@@ -34,7 +34,7 @@ class Stack {
     }
 
     public boolean isFull() {
-        return top == max - 1;
+        return top == size - 1;
     }
 
     public void push() {
@@ -45,13 +45,14 @@ class Stack {
             stackArray[++top] = data;
             System.out.println(data + " Pushed");
         }
-        System.out.println("Stack Overflow! We Can't push ");
+        System.out.println("Stack Overflow! We Can't Push any More Data in This Array ");
 
     }
 
     public void pop() {
         if (isEmpty()) {
             System.out.println("Stack is Empty");
+            return;
         }
         System.out.println(stackArray[top--] + " Removed");
 
@@ -60,6 +61,7 @@ class Stack {
     public void DisplayLikeStack() {
         if (isEmpty()) {
             System.out.println("This Array is Empty");
+            return;
         }
 
         for (int i = top; i >= 0; i--) {
@@ -75,6 +77,7 @@ class Stack {
     public void DisplayNormal() {
         if (isEmpty()) {
             System.out.println("This Array is Empty");
+            return;
         }
 
         for (int i = 0; i <= top; i++) {
@@ -114,6 +117,7 @@ class Stack {
                         DisplayNormal();
                         break;
                 }
+                break;
 
             case 4:
                 System.out.println("Program Ended");
